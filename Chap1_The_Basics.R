@@ -1,4 +1,4 @@
-#Hands_On Book 
+#Hands_On Book ----
 
 # NOTE: To comment out text use Cmd + Shift + C
 # To run ALL code CMD + SHIFT + RETURN
@@ -17,7 +17,7 @@ typeof(10:15)
 a <- 1
 a
 #1  a is an 'object'
-
+typeof(a)
 a * 3
 #3
 
@@ -32,12 +32,12 @@ dim
 # list variables (object names) with ls() but also view Environment window
 ls()
 
-#A virtual die
+#A virtual die ----
 die <- 1:6
 
 die[3]
 
-#Each elemt squared
+#Each element squared ----
 
 #arithmetic operators work on each element the list
 die * die
@@ -48,20 +48,21 @@ die * die
 die + 8:10
 # Same as adding 8 9 10 8 9 10 result is 9 11 13 12 14 16
 
-#Matrix operators
+#Matrix operators ----
 #Inner multiplication (row onto column)
 die %*% die
 
 #Outer multiplication (column onto row)
 die %o% die
 
-#Simplem functions
+#Simplem functions ----
 round(3.14159, digits = 3)
 
 mean(die)
 mean(die * die)
 round(mean(die*die))
-#Sampling from the die vector
+
+#Sampling from the die vector ----
 
 sample(x = die, size = 2)
 #You must use 'x' for the vector set
@@ -83,7 +84,7 @@ sample(die,2)
 
 sample(1:6, 4)
 
-#Sampling with replacement
+#Sampling with replacement ----
 
 sample(die, 3, replace = TRUE)
 
