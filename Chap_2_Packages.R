@@ -27,4 +27,14 @@ qplot(x3, binwidth = 1)
 
 # Repeating or replicating a command
  replicate(3, 2*3)
+ 
+ source("rolldye.r")
+ replicate(10, roll(2))
+ 
+ 
+ rolls <- replicate(10000, roll2())
+ qplot(rolls, binwidth = 1)
+ 
+ rolls <- replicate(10000, roll3())
+ qplot(rolls, binwidth = 1)
 
