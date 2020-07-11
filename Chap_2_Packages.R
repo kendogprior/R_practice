@@ -38,3 +38,5 @@ qplot(x3, binwidth = 1)
  rolls <- replicate(10000, roll3())
  qplot(rolls, binwidth = 1)
 
+?regex
+ 

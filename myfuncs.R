@@ -6,3 +6,5 @@ roll <- function(numdice, rep = TRUE){
   }
   return(rolled)
 }   
+
+
