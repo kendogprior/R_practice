@@ -1,4 +1,10 @@
 # Chapter 2 - Packages ----
+
+
+# NOTE: To comment out text use Cmd + Shift + C
+# To run ALL code CMD + SHIFT + RETURN
+# To run current selection or code on line CMD + RETURN
+
 library('ggplot2')
 # qplot
 # The above function as-is will output it's source
