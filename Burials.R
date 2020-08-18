@@ -1,14 +1,16 @@
 library(tidyverse)
-<<<<<<< HEAD
 library(lubridate)
 burials <- read.csv("burials_fields.csv")
 bees <- select(burials, date_of_burial, age_at_death)
 # head(bees)
 glimpse(bees)
 burtib <- as_tibble(burials)
+burtib
 burs <- select(burtib, date_of_burial, age_at_death)
 head(burs)
 burtib[1:12]
+?count
+count(burtib, age_at_death, sort = TRUE )
 # head(burtib)
 # head(burials)
 # burials[1:3]
@@ -29,7 +31,7 @@ z <- format(y, "%A %b %d %Y")
 z 
 
 # Taken from Youtube video
-?runi
+# ?runi
 today <- Sys.Date()
 tm <- seq(1,8)
 tm
@@ -113,6 +115,4 @@ second_TIB
 # Selecting a column and then rows
 second_TIB$nitems[1:2]
 second_TIB[1,1]
-
-
->>>>>>> 88d50609731bdb077622422f6772ce7502e8f64e
+library(help="stats")
