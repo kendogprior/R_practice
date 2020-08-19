@@ -1,5 +1,10 @@
 USEFUL FUNCTIONS & DESCRIPTIONS ETC USED IN CHAP1 AND CHAP2
 
+SEE ALSO R BASE PACKAGES HERE:
+  https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html
+
+
+
 CHAP1
   typeof() - return type of argument
   round() - round to given number of dec. places
