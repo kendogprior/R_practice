@@ -55,7 +55,7 @@ die %*% die
 #Outer multiplication (column onto row)
 die %o% die
 
-#Simplem functions ----
+#Simple functions ----
 round(3.14159, digits = 3)
 
 mean(die)
@@ -72,7 +72,7 @@ sample(x = 1:59, size = 6)
 sort(sample(x = 1:59, size = 6))
 
 draw <- sample(x = 1:59, size = 6)
-sort
+sort(draw)
 
 #Can leave out variable names (x), size and use only the object name or value
 sample(die, size = 3)
@@ -93,6 +93,7 @@ sample(die, 8, replace = TRUE) # equivalent to eight throws of dice
 
 horses <- c("Stupor", "Filly", "Jasper")
 horses
+sort(horses)
 
 sample(horses, 2)
 
