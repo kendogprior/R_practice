@@ -6,7 +6,7 @@
 # To run current selection or code on line CMD + RETURN
 
 library('ggplot2')
-# qplot
+# qplot()
 # The above function as-is will output it's source
 # code when executed
 
