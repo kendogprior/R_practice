@@ -126,10 +126,66 @@ log(e)
 #  Log to base 10 is log10
 log10(100)
 
-#  .... and in general log(x, base) 
+#  .... and in general log(x, base)  eg.
+log(100, 10)
 
 # Apparently less confusing list is:  
 ls(baseenv(), all = TRUE)
 
+# ===========================================================
+  
+# ATTRIBUTES
+Remember: 
+# CMD + SHIFT + C = #
+# OPTIONS + - = <-
+# Attributes are pieces of info that canbe attached to an atomic vector
+
+attributes(die)
+
+# NAMES
+# Names are the most common attributes given to atomic vectors
+die 
+# No names attributes in die, let's add some.....
+
+names(die) <- c("one", "two", "three", "four", "five", "six")
+
+# Thus, watch for difference in output
+names(die)
+attributes(die)
+
+die
+
+# Names don't afffect values e.g.
+
+die * 2
+
+# Names can be changed (or removed by assigning NULL)
+
+Dim
+# An atomic vector can be changed into an n-dimensional array by giving it an attribute 'dim'
+
+e.g.
+dim(die) <- c(2, 3)
+die
+
+or 
+dim(die) <- c(3,2)
+die
+
+or a 1 * 2 * 3 hypercube
+dim(die) <-  c(1, 2, 3)
+die
 
 
+# MATRICES
+# Matrices are two dimensional arrays. Atomic vectors can be transformed 
+# matrices using the matrix function
+
+m <- matrix(die, nrow = 2)
+m
+
+#  To change the column ordering into rows use..
+m <- matrix(die, nrow = 2, byrow = TRUE)
+m
+
+# TO BE CONTINUED.......
